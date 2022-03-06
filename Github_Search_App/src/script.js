@@ -11,12 +11,13 @@ const locationText = document.querySelector('#location-text')
 const twitterText = document.querySelector('#twitter-text')
 const biotext = document.querySelector('#bio-text')
 const tarih = document.querySelector('#tarih')
+let image =document.querySelector('.img-pp')
+
 
 
 
 const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-let image =document.querySelector('.img-pp')
 
 
 let userData
@@ -30,7 +31,7 @@ const getData = async (username) =>{
 const updateUi = () =>{
     for (let userDataKey in userData) {
         if (userData[userDataKey] == null){
-            console.log(userData[userDataKey] = '')
+            userData[userDataKey] = ''
         }
 
     }
@@ -47,7 +48,6 @@ const updateUi = () =>{
     const year = userData.created_at.slice(0,4)
     const gitmonth = month[(Number(userData.created_at.slice(5,7)))-1]
     const day = userData.created_at.slice(8,10)
-    console.log(year,gitmonth,day)
     tarih.textContent = `Joined ${day} ${gitmonth} ${year}`
 }
 
@@ -59,7 +59,7 @@ form.addEventListener('submit',
 
         const update = async () => {
             await getData(inputValue);
-            console.log(userData)
+
 
             if (!(userData.message == 'Not Found')){
             await updateUi()
@@ -71,7 +71,6 @@ form.addEventListener('submit',
             }
 
             if (userData.message == 'Not Found'){
-                console.log('kullanici yok')
                 const errordiv =  `<div class="error-box">Not Found User!!</div>`
                 parentdiv.insertAdjacentHTML('beforeend',errordiv)
         }

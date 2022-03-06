@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub-SearchApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="m-body center ">
+       <div class="header">
+           <div class=" main-logo"><img class="search-logo" src="img/mainlogo_logo.svg" alt="logo"></div>
+       </div>
+
+<!--       <div class="header_bottom"><img class="logo-2" src="search_logo.svg" alt="logo"></div>-->
+
+
+<!-- HACI BURAYI SEN EKLE DEDIN EKLEDIM -->
+
+        <div class="content">
+    <form action="#" class="input-form">
+        <input type="text" class="user-input" placeholder="Search on Github" name="username" id="">
+        <button type="submit" class="btn-search"><img src="img/SearchIcon.svg" alt=""></button>
+    </form>
+
+
+</div>
+
+
+
+
+<!--HACI BURAYI SEN EKLE DEDIN EKLEDIM  -->
+
+        <div class="main-box">
+
+
+
+            <!-- TARİH-FOTOĞRAF-VE İSMİN YER ALDIĞI BÖLÜM -->
+
+
+          <div class="date"><p id="tarih" class="date-p"></p></div>
+          <div class="profile-photo"> <img class="img-pp" src="img/profile.svg" alt=""></div>
+            <div class="author">
+                <div class="profile-name-1"><p class="pp-paragraph-1"></p></div>
+                <div class="profile-name-2"><p class="pp-paragraph-2">@earslanyunus</p></div>
+            </div>
+
+
+
+          <!-- BEYAZ KUTUNUN ALT TARAFINDAKİ SAĞ VE SOL KUTULAR  -->
+
+
+          <div class="main-box-bottom">
+
+
+
+              <div class="left-box box">
+
+
+                <div class="line ">
+                    <div ><img class="line-logo bio-logo" src="img/bio_logo.svg" alt="logo"></div>
+                    <div  class="line-right">
+                        <p class="line-paragraph ml4">Bio</p>
+                        <p class="line-tw text-flow" id="bio-text"></p>
+                    </div>
+              </div>
+
+
+              <div class="line topL ">
+                <div ><img class="line-logo" src="img/location_logo.svg" alt="logo"></div>
+
+                <div class="line-right">
+                <div><p class="line-paragraph ml4">Location</p></div>
+                <p class="line-tw text-flow" id="location-text"></p>
+              </div>
+
+             </div>
+
+
+             <div class="line topL ">
+
+               
+                <div ><img class="line-logo" src="img/twitter_logo.svg" alt="logo"></div>
+                <div class="line-right">
+                <div><p class="line-paragraph ml4">Twitter</p></div>
+                <p class="line-tw text-flow" ><a target="_blank" id="twitter-text" href=""></a></p>
+              </div>
+          </div>
+
+
+              </div>
+
+
+
+
+
+              <div class="right-box box">
+
+
+                
+                <div class="line topR">
+                    <div ><img class="line-logo" src="img/github_logo.svg" alt="logo"></div>
+
+                    <div class="stat-text">
+                        <div class="line-p-div"><p class="mr2 line-paragraph">Repo Count</p></div>
+                        <p class="right-numbers text-flow" id="repocount"></p>
+                    </div>
+
+              </div>
+
+
+              <div class="line topR">
+                <div ><img class="line-logo" src="img/github_logo.svg" alt="logo"></div>
+                <div class="stat-text">
+                    <div class="line-p-div"><p class="mr2 line-paragraph">Following</p></div>
+                    <p class="right-numbers text-flow" id="following"></p>
+                </div>
+             </div>
+
+
+             <div class="line topR">
+                <div ><img class="line-logo" src="img/github_logo.svg" alt="logo"></div>
+                 <div class="stat-text">
+                    <div class="line-p-div"><p class="mr2 line-paragraph">Followers</p></div>
+                    <p class="right-numbers text-flow" id="followers"></p>
+                 </div>
+          </div>
+
+
+              </div>
+          </div>
+
+        </div>
+
+
+
+   </div>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
